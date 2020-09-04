@@ -63,7 +63,8 @@ Dit is geen goede structuur omdat er geen kopjes of paragrafen zijn. Het is 1 la
     inline-elementen staan tussen de tekst of andere elementen,<div></div>
      ze bezetten evenveel breedte als de breedte van hun inhoud;</p>
 <h4>8. Wat betekent nesting? Codeer een voorbeeld met nesting erin.</h4>
-<p>Een elementen in andere elementen steken.  </p>
+<p>Geneste elementen zijn elementen die in elkaar zitten en de definitie komt vanuit het
+    Engelse woord nesting ( objecten die in elkaar geplaatst kunnen worden ). </p>
 <p>Deze opdrachten zijn <strong>erg</strong> leerzaam.</p>
 
 <h2>Semantics </h2>
@@ -110,6 +111,103 @@ Maar zonder hiërarchisch onderscheid, herkent een zoekmachine de titels niet.
   Daarom is het belangrijk om je koppen te labelen als headings met 
   daarbij het juiste hiërarchische niveau.</p> 
   <h4>12. Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat</h4>
-  <h1>Heading</h1>
+  <h1>Headings opdrachten</h1>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <h2>Paragrafen</h2>
+
+  <h4>13.Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+    Geef hier een voorbeeld bij. 
+    </h4>
+    <p>Deze tag definieert een alineascheiding in gewone tekst. 
+        Na deze tag, creëert de browser automatisch wat ruimte boven en onder de inhoud. 
+        Deze tekst staat in een paragraaf tag</p>
+  <h4>14.Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+    paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit</h4>  
+    <p>je kunt alle tekst in één paragraag stoppe. Je krijgt dan wel een lange lap tekst. 
+        door breaks te gebruiken is het alsof je enter gebruikt.</p>    
+<h4>15. Reproduceer het volgende resultaat door gebruik te maken van text-headers
+    en de paragraaf tags. </h4>
+    <img src="/HTML/techgroundsLOgo.jpg" width="400">
+    <h2>Mijn eerste website</h2>
+    <h3>Mijn eerste sub-kop</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Mauris urna est, feugiat id consequat a, suscipit eu turpis. 
+     Nam consequat faucibus est sed pellentesque. 
+     Integer tristique rhoncus tincidunt. In sit amet volutpat mi. 
+    Vestibulum eu dignissim sapien. Maecenas eu justo non velit mollis porta eget in urna. </p>
+<h3>Mijn tweede sub-kop</h3>
+<p>Vestibulum non nunc sed lacus aliquet condimentum at sed tellus. 
+    Curabitur et dolor eleifend, tincidunt ex quis, mollis lorem. 
+    Donec nisi ante, venenatis id erat ac, ultricies rhoncus tortor. 
+    Fusce id est eu eros mattis finibus. Duis pharetra nisi et condimentum sodales. 
+    Donec sodales eros elit, ut vulputate magna sodales semper. In ut tortor mi.
+     Sed eleifend consequat nunc, in condimentum mauris finibus at.</p>
+     <p>Sed orci arcu, malesuada a luctus ac, vulputate vel justo. 
+         Mauris urna nibh, tempus et lectus quis, cursus pharetra mi.
+          Pellentesque tristique vitae nulla sed scelerisque. 
+          Proin egestas urna quis massa pharetra, sed hendrerit metus blandit. Duis vel commodo ante. 
+         Duis consequat et metus a placerat.</p>       
+         <h4>16.Voeg een Horizontal rule toe en reproduceer het volgende resultaat.</h4>
+
+         <hr>
+         <h5>Footer</h5>
+         <p>Deze website is gebouwd vanuit de  <a href="https://techgrounds.nl/">TechGrounds Academy</a> </p>
+<p>
+ <a href="https://techgrounds.nl/">
+<img src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png">
+
+</a>
+
+</p>
+         <h4>18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen
+            en voeg deze als voorbeeld toe op je website.  </h4>
+            <p>De target attributen vertellen waar de link geopend moet worden</p>
+            <ul>
+             <li> _blank </li>   
+             <p>Wanneer je een de target blank gebruikt opent de webiste in een nieuw tablat</p>
+             <p><a href="https://techgrounds.nl/" target="_blank">TechGrounds website opent in top</a></p>
+             <li> _self </li>
+             <p>Wanneer je een de target self gebruikt opent de webiste in hetzelfde tablat</p>
+             <p><a href="https://techgrounds.nl/" target="_self">TechGrounds website opent in self</a></p>
+             <li> _parent</li>
+             <p>Wanneer je een de target parent gebruikt opent de webiste in de parent frame</p>
+             <p><a href="https://techgrounds.nl/" target="_parent">TechGrounds website opent in parent</a></p>
+             <li> _top </li>
+             <p>Wanneer je een de target top gebruikt opent de webiste in de gehele body van de windom</p>
+             <p><a href="https://techgrounds.nl/" target="_top">TechGrounds website opent in top</a></p>
+            </ul>
+
+
+<h2>Elementen</h2>
+
+<h4>1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+    bestand aan te geven. Dit kan op 2 manieren:Wat houden deze 2 paths in?</h4>
+<li>Absolute path</li>
+<p>Een absoluut pad is het volledig adres, inclusief domein (de naam van de website),
+     bijvoorbeeld www.terschelling.nl/img/polder1.jpg
+    Je gebruikt een absoluut pad als het bestand dat je 
+    zoekt op een andere website staat dan het bestand met de link of het img element.</p>
+<li>Relative path</li>
+    <p>Bij een relatieve URL wordt door een webbrowser en ook crawler aangenomen dat er verwezen wordt naar
+         een bestand (zoals een HTML-bestand of bijvoorbeeld een PDF-bestand)
+         binnen hetzelfde (sub)domein waar men zich op dat moment bevindt.</p>
+
+ <h4>2. Zoek uit welke formaat afbeeldingen er nog meer kan zijn. </h4>    
+ <li>PNG</li>    
+ <li>GIF</li>
+ <h4>3. Zoek uit welke browsers er zijn en maak een lijst van je antwoord. </h4>
+ <li>Mozilla Firefox</li>    
+ <li>Google Chrome</li>
+ <li>Microsoft Edge</li>    
+ <li>Internet Explorer</li>
+ <li>Opera Browser</li>
+ <li>Apple Safari</li>
+ 
 </body>  
 </html>
