@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms & Tables opdr 4 - 7</title>
+  <link rel="icon" href="techgroundslogo.ico">
+</head>
+
+<body>
+
+  <div>
+    <h2><u>4. Een formulier kun je ook groeperen.</u></h2>
+    <fieldset style="widows: 100%;;">
+      <legend>Persoons gegevens</legend>
+      <table>
+        <tr>
+          <td>
+            <br>
+            <form>
+              Achternaam: <input type="text" name="Achternaam" placeholder="Achternaam">
+            </form>
+            <br>
+            <form>
+              Voornaam: <input type="text" name="Voornaam" placeholder="Voornaam">
+            </form>
+            <br>
+            <form>
+              <label for="start">Geboortedatum</label>
+              <input type="date" name="Geboortedatum">
+            </form>
+            <br>
+            <form>
+              <label for="man">M:</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="vrouw">V:</label>
+              <input type="radio" id="female" name="gender" value="female">
+            </form>
+            <br>
+            <form>
+              Postcode: <input type="text" name="Postcode" placeholder="Postcode" minlength="6" maxlength="6" size="6">
+            </form>
+            <br>
+            <form>
+              Adres: <input type="text" name="Adres" placeholder="Adres">
+            </form>
+            <br>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </div>
+  <hr>
+  <div>
+    <h2><u>5. Naast input element heb je ook een select element. Hiermee kan je een
+        dropdown list maken. Maak een drop down list.</u></h2>
+    <select name="choice">
+      <option value="first">low</option>
+      <option value="second" selected>medium</option>
+      <option value="third">high</option>
+    </select>
+  </div>
+  <hr>
+  <div>
+    <h2><u>6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+        maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+        maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+        waar je in kan gebruiken en leg dat uit?</u></h2>
+    <ul>
+      <li>dropdown list</li>
+      <p>De drop down list moet alleen gebruikt worden wanneer de gebruiker
+        moet kiezen tussen de verschillende opties in de lijst en geeft de gebruiker
+        niet de kans op niets te kiezen.</p>
+      <li>radio buttons</li>
+      <p>Kan tegenovergesteld van de drop down list leeg blijven. Word vaak gebuikt om gender
+        te selecteren aangezien wanneer je kiest er maar 1 keuze mogelijk is.</p>
+      <li>checkboxes</li>
+      <p>Wanneer er meerdere keuzes mogelijk zijn.</p>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <h2><u>7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+        willen we graag het volgende weten:</u></h2>
+    <ul>
+      <li>Naam van dat persoon</li>
+      <li>Of hij/zij lidmaatschap heeft</li>
+      <li>E-mail van dat persoon</li>
+      <li>Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash</li>
+      <li>Datum en tijdstip om te reserveren</li>
+      <li>Een checkbox waarbij de gebruiker akkoord gaat over de reserverings
+        voorwaardes</li>
+      <li>Een submit knop</li>
+    </ul>
+  </div>
+  <div>
+    <fieldset style="widows: 100%;;">
+      <legend>Reserverings Formulier</legend>
+      <table>
+        <tr>
+          <td>
+            <p><strong>Uw gegevens:</strong></p>
+            <form>
+              Achternaam: <input type="text" name="Achternaam" placeholder="Achternaam">
+            </form>
+            <br>
+            <form>
+              Voornaam: <input type="text" name="Voornaam" placeholder="Voornaam">
+            </form>
+            <br>
+            <p><strong>Bent u in het bezit van een lidmaatschap:</strong></p>
+            <form>
+              <label for="man">Ja:</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="vrouw">Nee:</label>
+              <input type="radio" id="female" name="gender" value="female">
+            </form>
+            <br>
+            <p><strong>Uw email-adres:</strong></p>
+            <form action="/action_page.php">
+              <label for="email">email:</label>
+              <input type="email" id="email" name="email">
+            </form>
+            <br>
+            <p><strong>Type sport om te reserveren:</strong></p>
+            <select name="choice">
+              <option value="first">tafeltennis</option>
+              <option value="second" selected>badminton</option>
+              <option value="third">squash</option>
+            </select>
+            <br>
+            <p><strong>Kies een tijd voor uw afspraak:</strong></p>
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2020-09-02T19:30"
+              min="2020-09-02T00:00" max="2020-12-02T00:00">
+            <br>
+            <p><strong>U gaat akkoord met de reserverings voorwaardes:</strong></p>
+            <input type="checkbox" id="scales" name="scales">
+            <label for="Ja">Ja</label>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <input type="submit" value="submit">
+  </div>
+
+</body>
+
+</html>

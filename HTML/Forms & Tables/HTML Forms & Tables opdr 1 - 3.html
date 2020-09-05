@@ -1,0 +1,82 @@
+<html>
+
+<body>
+    <h3>HTML Forms</h3>
+    <h4>1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+        vullen. Zie hieronder voor een voorbeeld:</h4>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Sur name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+    </form>
+    <h4> 2. Naast input text fields zijn er ook nog andere input fields.
+        Maak voor elk input field een voorbeeld.</h4> Zoals:
+    <li>radiobutton</li>
+    <form>
+        <input type="radio" id="Yes" name="answer" value="Yes">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" id="No" name="answer" value="No">
+        <label for="No">No</label><br>
+        <input type="radio" id="Maybe" name="anwer" value="Maybe">
+        <label for="Maybe">Maybe</label>
+    </form>
+    <li>checkbox</li>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+    </form>
+    <li>password</li>
+    <form>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+    </form>
+
+    <li>reset</li>
+    <form> <input type="reset" value="Reset">
+    </form>
+    <li>submit</li>
+    <form> <input type="submit" value="Submit"></form>
+    <li>date</li>
+    <form>
+        <label for="date">date:</label>
+        <input type="date" id="date" name="date">
+      </form>
+    <li>search</li>
+    <form>
+    <input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+    </form>
+<button>Search</button>
+    <li>time</li>
+    <form>
+        <label for="appt">Time:</label>
+        <input type="time" id="appt" name="appt">
+       
+      </form>
+    <li>hidden</li>
+    <form>
+        <label for="fname">naam:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+      </form>
+    <li>email</li>
+    <form>
+        <label for="email"> email:</label>
+        <input type="email" id="email" name="email">
+      </form>
+
+      <h4>3. Maak een input email field met een submit knop.</h4>
+      <form>
+        <label for="email"> email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+      </form>
+</body>
+
+</html>

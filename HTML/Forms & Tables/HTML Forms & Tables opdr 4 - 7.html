@@ -1,0 +1,114 @@
+<html>
+
+<body>
+    <h4>4. Een formulier kun je ook groeperen.Bouw dit voorbeeld na.</h4>
+    <div>
+
+        <fieldset style="widows: 750px;">
+            <legend>Persoons gegevens</legend>
+            <table>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="fname">Achternaam:</label>
+                        <input type="text" id="fname" name="fname">
+                        <div></div>
+                        <label for="lname">Voornaam:</label>
+                        <input type="text" id="lname" name="lname"><br>
+                        <label for="date">Geboortedatum:</label>
+                        <input type="date" id="date" name="date">
+                        <div></div>
+                        <input type="radio" id="Yes" name="answer" value="Yes">
+                        <label for="Yes">M</label><br>
+                        <input type="radio" id="No" name="answer" value="No">
+                        <label for="No">V</label><br>
+                        <label for="postcode">Postcode</label>
+                        <input type="number" class="postcode" pattern="[0-9]{4}" placeholder="4 nummers" />
+                        <input type="text" class="postcode" pattern="[A-Z]{2}" placeholder="2 letters" />
+                        <div></div>
+                        <label for="fname">Address:</label>
+                        <input type="text" id="Address" name="Address">
+            
+                        <input type="submit" value="Reserveer!">
+                        
+
+                        <br>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </div>
+    <h4>5. Naast input element heb je ook een select element. Hiermee kan je een
+        dropdown list maken. Maak een drop down list.</h4>
+    <form>
+        <label for="Kleuren">Kies een kleur:</label>
+        <select name="Kleuren" id="kleuren">
+            <option value="Rood">Rood</option>
+            <option value="Groen">Groen</option>
+            <option value="Blauw">Blauw</option>
+            <option value="Geel">Geel</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h4>6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+        maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+        maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+        waar je in kan gebruiken en leg dat uit?</h4>
+    <li>dropdown list</li>
+    <p>Je gebruikt een droplist wanneer
+        je wilt dat de website bezoeker zijn voorkeur kenbaar maakt</p>
+    <li>Radio buttons</li>
+    <p>Je gebruikt een radio button wanneer de website bezoeker moet kiezen tussen twee of meer opties.
+        Waarin deze opties elkaar wederzijds niet uitsluiten</p>
+    <li>checkboxes</li>
+    <p>Je gebruikt een checkbox wanneer de website bezoeker zelf\
+        mag kiezen hoeveel opties hij wilt kiezen</p>
+    <h4>7. Maak een reserveringsformulier om een sport te reserveren.</h4>
+    <div>
+
+        <fieldset style="widows: 750px;">
+            <legend>Reserveringsformulier</legend>
+            <table>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="fname">Voornaam:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Achternaam:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        <h3>Heeft u een lid maatschap?</h3>
+                        <input type="radio" id="Yes" name="answer" value="Yes">
+                        <label for="Yes">Ja</label><br>
+                        <input type="radio" id="No" name="answer" value="No">
+                        <label for="No">Nee</label><br>
+                        <label for="email"> email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="Kleuren">Type sport:</label>
+                        <select name="Sport" id="Sport">
+                            <option value="Tennis">tafeltennis</option>
+                            <option value="badminton">badminton</option>
+                            <option value="Squash">squash</option>
+
+                        </select><br>
+                        <label for="date">datum:</label>
+                        <input type="date" id="date" name="date"><br>
+                        <label for="appt">Tijd:</label>
+                        <input type="time" id="appt" name="appt"><br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Ik heb alles naar waarheid ingevuld</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Ik heb de algemene voorwaarden gelezen</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Ik ga akkoord met de algemene voorwaarden</label><br>
+                        <input type="submit" value="Reserveer">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>
