@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+
+<body>
+    <h4><strong>Opdracht 1
+            Welke position properties zijn er?
+
+            Leg voor elke position property uit wat het doet. Geef ook
+            aan welke default position waarde elementen hebben die je gebruikt in html.</strong></h4>
+    <li>static</li>
+    <p>static is de standaard waarde. Een element met position:
+        static; is niet op een speciale
+        manier gepositioneerd. Een static element gaat onder de noemer niet gepositioneerd
+        in tegenstelling tot een element met een andere waarde die als
+        gepositioneerd wordt bestempeld.</p>
+    <p>Het element wordt op destandaard manier geplaatst.
+        De waarden van top, bottom, left, right hebben geen effect.
+        Standaard worden elementen geplaats in de volgorde waarin ze in het document staan.
+        Een regel worden gevuld van links naar rechts tot deze vol is. Daarna volgt de regel daaronder.
+        Net als bij schrijven.
+        Een blok-element staat altijd op een aparte regel, ook als de vorige regel nog niet vol is.</p>
+    <li>relative</li>
+    <p>relative gedraagt zich hetzelfde als static tenzij je nog een aantal extra properties opneemt.
+        De oorspronkelijke plaats blijft leeg.</p>
+
+  
+        Het zetten van de top, right, bottom, en left properties van een relative
+        gepositioneerd element zal
+        ervoor zorgen dat de positie aangepast wordt ten
+        opzichte van zijn originele positie.
+        Andere content zal niet aangepast worden om te zien of
+        dit in de overgebleven ruimte past.</p>
+        <li>fixed</li>
+        <p>fixed
+        
+      
+
+        Een fixed element is relatief gepositioneerd ten opzichte van de viewport,
+        wat inhoud dat dit element altijd op dezelfde plek staat ongeacht of de pagina wordt gescrold.
+        Net als met relative worden de top, right, bottom, en left properties gebruikt.</p>
+        <p>Het element wordt gepositioneerd t.o.v. het venster (de viewport)
+            bij schuiven (scrollen) van de webpagina blijft het gefixeerde element op zijn plaats.
+            De viewport is het gedeelte van
+            de website dat je op het scherm ziet. Ik zeg meestal gewoon 'het venster'.</p>
+        <li>absolute</li>
+        <p>absolute is de lastigste waarde voor position.
+            absolute gedraagt zich net als fixed behalve deze relatief tot de
+            dichtsbijzijnde gepositioneerde voorouder element in tegenstelling tot
+            relatief in de viewport.
+            Als een absolute gepositioneerd element geen gepositioneerde voorouders heeft,
+            dan wordt de document body gebruikt en zal het mee scrollen met de pagina.
+            Voor de duidelijkheid, een "positioned" element is
+            een element wiens positie alles is behalve static.</p>
+        <p> Als bij fixed. Nu wordt gepostioneerd t.o.v. het parent element.
+            Preciezer gezegd: t.o.v. het eerste niet statische parent-element.
+            De procedure is als volgt: eerst wordt gekeken naar de parent.
+            Is dat niet relative, absolute of fixed dan kijken we verder bij diens parent.
+            Zo gaan we door tot we een relative, absolute of fixed element vinden.
+            Dat is de referentie. Vinden we geen enkele ancestor die voldoet,
+            dan is de body het referentie-element.
+
+            Een met postion: absolute geplaatst element verschuift wel met de webpagina mee,
+            een met postion: fixed geplaatst element niet.</p>
+        <li>sticky</li>
+        <p>Sticky zorgt ervoor dat wanneer 
+            sticky is een nieuwe (ish) waarde voor de eigenschap position,
+            toegevoegd als onderdeel van CSS3 Layout Module Spec. Het werkt op dezelfde manier als relatieve positionering,
+            in dat het niets uit de documentstroom verwijdert. Met andere woorden,
+             een plakkerig element heeft geen effect op de positie van aangrenzende elementen en doet dat ook niet
+              het bovenliggende element samenvouwen.
+
+
+            Er is een nieuwe positioneringswaarde beschikbaar genaamd position: sticky,
+            steun waarvoor nog niet erg wijdverbreid is.
+            Dit is in feite een hybride tussen relatieve en vaste positie,
+            waardoor een gepositioneerd element kan werken alsof het relatief gepositioneerd is
+            totdat het
+            wordt naar een bepaald drempelpunt gescrold
+            (bijv. 10px vanaf de bovenkant van de viewport),
+            waarna het wordt opgelost. </p>
+
+</body>
+
+</html>
