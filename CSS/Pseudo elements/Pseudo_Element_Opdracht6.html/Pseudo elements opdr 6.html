@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6</title>
+    <style>
+    
+        button {
+            color: white;
+            font-size:32px;
+            align-content: center;
+            border-color: black;
+            background-color: black;
+            left: 50px;
+            height: 150px;
+            width: 150px;
+            border-radius: 250px;
+            position: relative;
+            display: inline-block;
+            margin: 50px;
+        }
+
+        button::before {
+            font-size: 45px;
+            font-family: 'comic sans ms' ;
+            color: white;
+            content: "˙";
+            border-color: black;
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            border-radius: 250px;
+            left:-40px;
+            right:0px;
+            bottom: 30px;
+            padding: 10px;
+            position: absolute;
+
+        }
+
+        button::after {
+            font-size: 45px;
+            font-family: 'comic sans ms' ;
+            text-align: unset;
+            color: white;
+            content: ".";
+            border-color: black;
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            border-radius: 250px;
+            padding: 10px ;
+            right: 0px;
+            left: 110px;
+            bottom: 30px;
+            position: absolute;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h4><strong>Opdracht 6
+            Hieronder vind je wederom een voorbeeld van het gebruik van een pseudo-element. Kun jij
+            dit namaken?</strong></h4>
+
+    <button>1</button> 
+    <button>2</button>
+    <button>3</button>
+</body>
+
+</html>

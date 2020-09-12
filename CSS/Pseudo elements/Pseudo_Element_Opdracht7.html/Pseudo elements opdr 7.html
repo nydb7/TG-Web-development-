@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        opdracht 7
+    </title>
+    <style>
+        div {
+            border: red, 0px;
+            background-color: red;
+            width: 250px;
+            height: 250px;
+           
+         
+            padding: 10px;
+            margin: 50px;
+transform: rotate(60deg);
+            position: relative;
+
+        }
+
+        div::before { border: red, 0px;
+            background-color:red;
+            content: "";
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            transform: rotate(40deg);
+            position: absolute;
+
+        }
+
+        div::after{
+            border: red, 0px;
+            background-color:red;
+            content:"";
+            width: 250px;
+            height: 250px;
+          
+        
+           transform: rotate(60deg);
+            position: absolute;
+        }
+     
+    
+    </style>
+</head>
+
+<body>
+
+        <div></div>
+       
+
+   
+</body>
+
+</html>
