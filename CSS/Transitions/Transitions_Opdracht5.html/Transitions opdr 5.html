@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+    <style>
+        .container{
+            margin:16px;
+            margin-left: 10px;
+            width:500px;
+            height:400px;
+            border:2px  solid black ;
+            background-color:lightgrey;
+        }
+        .card{
+            position:absolute;
+         
+        }
+        .bird {
+            width:200px;
+            height:200px;
+            border:10px solid black;
+            
+            transition-duration:1s;
+        }
+        .cardcover {
+            position:absolute;
+            width:205px;
+            height:205px;
+            top:25px;
+            left:25px;
+            background-color:pink;
+            margin:0px;
+            transition-duration:1s;
+        }
+     
+          
+    
+        .container:hover .cardcover{
+            top:200px;
+            left:100px;
+            transform: rotate(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"><img src="/Gif/bird.gif" class="bird" ></div>
+        <div class="cardcover"></div>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
