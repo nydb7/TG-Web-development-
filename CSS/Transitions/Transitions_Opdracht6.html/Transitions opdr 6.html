@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht 6</title>
     <style>
-        .container{border-radius: 10%;
-        background-color: grey;
-        color: white;
-        width: 150px;
-        height: 200px;
-border:1px solid black;
+        .container {
+            border-radius: 10%;
+
+            background-color: grey;
+            color: white;
+            width: 150px;
+            height: 200px;
+            border: 1px solid black;
+            position: absolute;
+            margin: center;
         }
-        .container:hover{border-radius: 10%;
-        background-color: grey;
-        color: red;
-        width: 150px;
-        height: 200px;
-border:1px solid black;
+
+
+        #container1 {
+            left: 150px;
+            top:80px
+        }
+
+        #container2 {
+            left: 220px;
+            top:80px
+        }
+
+        #container3 {
+            left: 290px;
+            top:80px
+        }
+
+        #container4 {
+            left: 360px;
+            top:80px;        }
+
+
+        #container1:hover {
+            left: 210px;
+            top: 68px;
+            transition-duration: 2s;
+            
+        }
+
+        #container2:hover {
+            left: 280px;
+            top: 68px;
+            transition-duration: 2s;
+        }
+
+        #container3:hover {
+            left: 350px;
+            top: 68px;
+            transition-duration: 2s;
+        }
+
+        #container4:hover {
+            left: 420px;
+           top: 68px;
+            transition-duration: 2s;
+        }
+
+        .container:hover {
+            border-radius: 10%;
+            background-color: grey;
+            color: red;
+            width: 150px;
+            height: 200px;
+            border: 1px solid black;
         }
     </style>
 </head>
+
 <body>
     <div>
-    <div class="container">
-        <p>Article Sep 12,2020</p>
-        <h3>Placeholder Titel</h3><br>
-        <p>Author:<br>
-        Nanayaa Bafour</p>
+        <div class="container" id=container1>
+            <p>Article Sep 12,2020</p>
+            <h3>Placeholder Titel</h3><br>
+            <p>Author:<br>
+                Nanayaa Bafour</p>
+        </div>
+        <div class="container" id="container2">
+            <p>Article Sep 12,2020</p>
+            <h3>Placeholder Titel</h3><br>
+            <p>Author:<br>
+                Nanayaa Bafour</p>
+        </div>
+        <div class="container" id=container3>
+            <p>Article Sep 12,2020</p>
+            <h3>Placeholder Titel</h3><br>
+            <p>Author:<br>
+                Nanayaa Bafour</p>
+        </div>
+        <div class="container" id="container4">
+            <p>Article Sep 12,2020</p>
+            <h3>Placeholder Titel</h3><br>
+            <p>Author:<br>
+                Nanayaa Bafour</p>
+        </div>
     </div>
-    <div class="container">
-        <p>Article Sep 12,2020</p>
-        <h3>Placeholder Titel</h3><br>
-        <p>Author:<br>
-        Nanayaa Bafour</p>
-    </div>
-    <div class="container">
-        <p>Article Sep 12,2020</p>
-        <h3>Placeholder Titel</h3><br>
-        <p>Author:<br>
-        Nanayaa Bafour</p>
-    </div>
-    <div class="container">
-        <p>Article Sep 12,2020</p>
-        <h3>Placeholder Titel</h3><br>
-        <p>Author:<br>
-        Nanayaa Bafour</p>
-    </div>
-</div>
 </body>
+
 </html>
