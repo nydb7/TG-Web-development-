@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+</head>
+
+<body>
+    <h1>Translate months </h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</ button>
+        <div id="translatedMonth">
+            </ div>
+            <script>
+               function translateMonth() {
+            let value, text;
+            value = document.getElementById("number").value;
+            let maand = new Array();
+            maand[1] = "Januari";
+            maand[2] = "Februari";
+            maand[3] = "Maart";
+            maand[4] = "April";
+            maand[5] = "Mei";
+            maand[6] = "Juni";
+            maand[7] = "Juli";
+            maand[8] = "Augustus";
+            maand[9] = "September";
+            maand[10] = "October";
+            maand[11] = "November";
+            maand[12] = "December";
+            if (value >= 1 && value <= 12) {
+                text = maand[value]
+            } else {
+                text = "";
+            }
+            document.getElementById("translatedMonth").innerHTML = text;
+        }
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+</head>
+
+<body>
+    <h1>Translate months </h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</ button>
+        <div id="translatedMonth">
+            </ div>
+            <script>
+                function translateMonth() {
+                    var day;
+
+                    switch (new Date().getDay()) {
+                        case 1:
+                            day = "Januari";
+                            break;
+                        case 2:
+                            day = "Februari";
+                            break;
+                        case 3:
+                            day = "March";
+                            break;
+                        case 4:
+                            day = "April";
+                            break;
+                        case 5:
+                            day = "Mei";
+                            break;
+                        case 6:
+                            day = "Juni";
+                            break;
+                        case 7:
+                            day = "Juli";
+                            break;
+                        case 8:
+                            day = "Augustus";
+                            break;
+                        case 9:
+                            day = "September";
+                            break;
+                        case 10:
+                            day = "Oktober";
+                            break;
+                        case 11:
+                            day = "November";
+                            break;
+                        case 12:
+                            day = "December";
+
+                        default:
+                            day = "";
+                    }
+                    document.getElementById("translatedMonth").innerHTML = day;
+                }
+
+            </script>
+</body>
+
+</html>
